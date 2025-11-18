@@ -97,7 +97,7 @@ app.get("/api/v1/usuarios", verificarToken, async (req, res) => {
 // Exportar la app para Vercel
 export default app;
 
-// Iniciar el servidor (Heroku y desarrollo local)
+// Iniciar el servidor en desarrollo local
 // Vercel NO ejecuta esto porque usa el export default
 if (!process.env.VERCEL) {
   app.listen(PORT, () => {
