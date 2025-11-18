@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // Importar Express y MongoDB
+//Usamos el import porque estamos usando ES modules y es la forma más moderna
 import express from "express";
 import connectDB from "./config/db.js";
 import hello from "./api/v1/hello.js";
